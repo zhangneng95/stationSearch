@@ -26,7 +26,6 @@
                     return;
                 },
                 success:function(data){//请求成功之后的操作
-                    alert(data);
                 	json = data;
                 	var tmp = new Array();
                     for(var i = 0; i < data.length; i++) {
