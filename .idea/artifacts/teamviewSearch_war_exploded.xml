@@ -1,0 +1,13 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="teamviewSearch:war exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/teamviewSearch_war_exploded</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="teamviewSearch/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="teamviewSearch" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>
