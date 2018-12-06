@@ -7,24 +7,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c7d8a9fc-734d-4a46-8b4e-436a2882ab05" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/indi/nengz/config/SecurityWebInitializer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/WEB-INF/lib/thymeleaf-3.0.2.RELEASE.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/WEB-INF/lib/thymeleaf-spring4-3.0.2.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/lib/attoparser-2.0.0.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/lib/unbescape-1.0.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/teamviewSearch_war_exploded/WEB-INF/classes/indi/nengz/config/SecurityConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/teamviewSearch_war_exploded/WEB-INF/classes/indi/nengz/config/SecurityConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/teamviewSearch_war_exploded/WEB-INF/classes/indi/nengz/config/SpittrWebAppInitializer.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/teamviewSearch_war_exploded/WEB-INF/classes/indi/nengz/config/WebConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/teamviewSearch_war_exploded/WEB-INF/classes/indi/nengz/config/WebConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/teamviewSearch_war_exploded/WEB-INF/views/add.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/teamviewSearch_war_exploded/WEB-INF/views/add.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/teamviewSearch_war_exploded/WEB-INF/views/result.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/teamviewSearch_war_exploded/WEB-INF/views/result.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/indi/nengz/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/indi/nengz/config/SecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/indi/nengz/config/SpittrWebAppInitializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/indi/nengz/config/SearchWebAppInitializer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/teamviewSearch_war_exploded/WEB-INF/lib/thymeleaf-3.0.2.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/teamviewSearch_war_exploded/WEB-INF/lib/thymeleaf-spring4-3.0.2.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/teamviewSearch_war_exploded/WEB-INF/views/add.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/teamviewSearch_war_exploded/WEB-INF/views/result.jsp" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/indi/nengz/config/WebConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/indi/nengz/config/WebConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/classes/indi/nengz/config/SecurityConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/indi/nengz/config/SecurityConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/classes/indi/nengz/config/SpittrWebAppInitializer.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/web/WEB-INF/classes/indi/nengz/config/WebConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/indi/nengz/config/WebConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/views/add.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/views/add.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/views/result.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/views/result.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/lib/thymeleaf-3.0.2.RELEASE.jar" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/lib/thymeleaf-3.0.3.RELEASE.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/lib/thymeleaf-spring4-3.0.2.RELEASE.jar" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/lib/thymeleaf-spring4-3.0.3.RELEASE.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/views/add.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/views/add.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/views/result.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/views/result.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -52,7 +48,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/indi/nengz/config/SearchWebAppInitializer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="347">
+            <state relative-caret-position="456">
               <caret line="24" column="1" selection-start-line="24" selection-start-column="1" selection-end-line="24" selection-end-column="1" />
             </state>
           </provider>
@@ -70,7 +66,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/indi/nengz/web/InquireController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
+            <state relative-caret-position="627">
               <caret line="46" column="5" selection-start-line="46" selection-start-column="5" selection-end-line="46" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -81,11 +77,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/web/WEB-INF/views/result.jsp">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/WEB-INF/views/result.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="152">
-              <caret line="8" column="11" lean-forward="true" selection-start-line="8" selection-start-column="11" selection-end-line="8" selection-end-column="11" />
+            <state relative-caret-position="190">
+              <caret line="10" column="31" selection-start-line="10" selection-start-column="31" selection-end-line="10" selection-end-column="31" />
             </state>
           </provider>
         </entry>
@@ -93,7 +89,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/indi/nengz/config/SecurityConfig.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="247">
+            <state relative-caret-position="589">
               <caret line="31" column="45" selection-start-line="31" selection-start-column="45" selection-end-line="31" selection-end-column="45" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -102,14 +98,15 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/indi/nengz/config/WebConfig.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="817">
-              <caret line="43" column="2" lean-forward="true" selection-start-line="43" selection-start-column="2" selection-end-line="43" selection-end-column="2" />
+            <state relative-caret-position="399">
+              <caret line="42" column="47" lean-forward="true" selection-start-line="42" selection-start-column="47" selection-end-line="42" selection-end-column="47" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#2639#2640#0" expanded="true" />
+                <element signature="e#2249#2250#0" expanded="true" />
+                <element signature="e#2289#2290#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -128,12 +125,8 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/WEB-INF/views/add.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="64" selection-start-column="64" selection-end-column="64" />
-            </state>
-          </provider>
+        <entry file="file://$PROJECT_DIR$/web/WEB-INF/views/add.html">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -152,7 +145,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/indi/nengz/TeamView.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-52">
+            <state relative-caret-position="95">
               <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
             </state>
           </provider>
@@ -188,9 +181,11 @@
         <option value="$PROJECT_DIR$/data/Json.json" />
         <option value="$PROJECT_DIR$/src/indi/nengz/config/SecurityWebInitializer.java" />
         <option value="$PROJECT_DIR$/src/indi/nengz/config/SecurityConfig.java" />
-        <option value="$PROJECT_DIR$/src/indi/nengz/config/WebConfig.java" />
         <option value="$PROJECT_DIR$/web/WEB-INF/views/add.jsp" />
         <option value="$PROJECT_DIR$/web/WEB-INF/views/result.jsp" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/views/add.html" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/views/result.html" />
+        <option value="$PROJECT_DIR$/src/indi/nengz/config/WebConfig.java" />
       </list>
     </option>
   </component>
@@ -214,18 +209,12 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="teamviewSearch" type="b2602c69:ProjectViewProjectNode" />
               <item name="teamviewSearch" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="teamviewSearch" type="b2602c69:ProjectViewProjectNode" />
-              <item name="teamviewSearch" type="462c0819:PsiDirectoryNode" />
-              <item name=".idea" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="teamviewSearch" type="b2602c69:ProjectViewProjectNode" />
@@ -275,18 +264,23 @@
               <item name="teamviewSearch" type="462c0819:PsiDirectoryNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
               <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="teamviewSearch" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544085859972" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544088606945" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/web/WEB-INF/lib" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -423,12 +417,13 @@
       <updated>1543904839268</updated>
       <workItem from="1543904847700" duration="6046000" />
       <workItem from="1543971995451" duration="13171000" />
-      <workItem from="1544060246276" duration="13565000" />
+      <workItem from="1544060246276" duration="16348000" />
+      <workItem from="1544088756366" duration="26000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="32782000" />
+    <option name="totallyTimeSpent" value="35591000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -443,7 +438,7 @@
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4989429" visible="true" weight="0.25670242" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4989429" visible="true" weight="0.2600536" />
       <window_info id="Structure" order="1" sideWeight="0.5010571" side_tool="true" weight="0.25670242" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -453,7 +448,7 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.33002833" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.33002833" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -521,6 +516,28 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/indi/nengz/web/InquireController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="627">
+          <caret line="46" column="5" selection-start-line="46" selection-start-column="5" selection-end-line="46" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#718#719#0" expanded="true" />
+            <element signature="e#746#747#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/views/result.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="10" column="31" selection-start-line="10" selection-start-column="31" selection-end-line="10" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/views/add.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/indi/nengz/Region.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="95">
@@ -534,19 +551,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/indi/nengz/TeamView.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-52">
+        <state relative-caret-position="95">
           <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/indi/nengz/web/InquireController.java">
+    <entry file="file://$PROJECT_DIR$/src/indi/nengz/config/SearchWebAppInitializer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="46" column="5" selection-start-line="46" selection-start-column="5" selection-end-line="46" selection-end-column="5" />
+        <state relative-caret-position="456">
+          <caret line="24" column="1" selection-start-line="24" selection-start-column="1" selection-end-line="24" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/indi/nengz/config/SecurityConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="589">
+          <caret line="31" column="45" selection-start-line="31" selection-start-column="45" selection-end-line="31" selection-end-column="45" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#718#719#0" expanded="true" />
-            <element signature="e#746#747#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -568,45 +590,15 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/indi/nengz/config/SearchWebAppInitializer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="347">
-          <caret line="24" column="1" selection-start-line="24" selection-start-column="1" selection-end-line="24" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/indi/nengz/config/SecurityConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="31" column="45" selection-start-line="31" selection-start-column="45" selection-end-line="31" selection-end-column="45" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/indi/nengz/config/WebConfig.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="817">
-          <caret line="43" column="2" lean-forward="true" selection-start-line="43" selection-start-column="2" selection-end-line="43" selection-end-column="2" />
+        <state relative-caret-position="399">
+          <caret line="42" column="47" lean-forward="true" selection-start-line="42" selection-start-column="47" selection-end-line="42" selection-end-column="47" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2639#2640#0" expanded="true" />
+            <element signature="e#2249#2250#0" expanded="true" />
+            <element signature="e#2289#2290#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/views/add.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="64" selection-start-column="64" selection-end-column="64" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/views/result.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" column="11" lean-forward="true" selection-start-line="8" selection-start-column="11" selection-end-line="8" selection-end-column="11" />
         </state>
       </provider>
     </entry>

@@ -19,44 +19,39 @@ import org.thymeleaf.templateresolver.ITemplateResolver;
 @EnableWebMvc        //启动Spring MVC
 @ComponentScan("indi.nengz.web")       //启动组件扫描
 public class WebConfig extends WebMvcConfigurerAdapter{
-	@Bean
-	public ViewResolver viewResolver() {
-		InternalResourceViewResolver resolver = new InternalResourceViewResolver();     //配置JSP视图解析器
-		resolver.setPrefix("/WEB-INF/views/");
-		resolver.setSuffix(".jsp");
-		resolver.setExposeContextBeansAsAttributes(true);
-		return resolver;
-	}
+//	@Bean
+//	public ViewResolver viewResolver() {
+//		InternalResourceViewResolver resolver = new InternalResourceViewResolver();     //配置JSP视图解析器
+//		resolver.setPrefix("/WEB-INF/views/");
+//		resolver.setSuffix(".jsp");
+//		resolver.setExposeContextBeansAsAttributes(true);
+//		return resolver;
+//	}
 
 
-//    @Bean
-//    public ITemplateResolver  templateResolver() {                        //模板解析器
-//        SpringResourceTemplateResolver templateResolver = new SpringResourceTemplateResolver();
-//        templateResolver.setTemplateMode("HTML5");
-//        templateResolver.setPrefix("/WEB-INF/views/");
-//        templateResolver.setSuffix(".html");
-//        templateResolver.setCharacterEncoding("utf-8");
-//        templateResolver.setOrder(1);
-//        templateResolver.setCacheable(false);
-//        return templateResolver;
-//    }
-//
-//
-//    @Bean
-//    public SpringTemplateEngine templateEngine(ITemplateResolver  templateResolver) {            //模板引擎
-//        SpringTemplateEngine templateEngine = new SpringTemplateEngine();
-//        templateEngine.setTemplateResolver(templateResolver);
-//        return templateEngine;
-//    }
-//
-//
-//    @Bean
-//    public ThymeleafViewResolver  viewResolver(TemplateEngine templateEngine) {            //Thymeleaf视图解析器
-//        ThymeleafViewResolver viewResolver = new ThymeleafViewResolver();
-//        viewResolver.setTemplateEngine(templateEngine);
-//        viewResolver.setCharacterEncoding("utf-8");
-//        return viewResolver;
-//    }
+    @Bean
+    public ViewResolver viewResolver() {
+        ThymeleafViewResolver resolver = new ThymeleafViewResolver();
+        resolver.setTemplateEngine(templateEngine());
+        resolver.setCharacterEncoding("UTF-8");
+        return resolver;
+    }
+
+    @Bean
+    public TemplateEngine templateEngine() {
+        SpringTemplateEngine engine = new SpringTemplateEngine();
+        engine.setEnableSpringELCompiler(true);
+        engine.setTemplateResolver(templateResolver());
+        return engine;
+    }
+
+    private ITemplateResolver templateResolver() {
+        SpringResourceTemplateResolver resolver = new SpringResourceTemplateResolver();
+//        resolver.setApplicationContext(applicationContext);
+        resolver.setPrefix("/WEB-INF/templates/");
+        resolver.setTemplateMode("HTML5");
+        return resolver;
+    }
 
 
 
