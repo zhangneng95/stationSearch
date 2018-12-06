@@ -1,6 +1,7 @@
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<html>
+<%@ page contentType="text/html;charset=UTF-8" language="java"%>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	  xmlns:th="http://www.thymeleaf.org">
 	<head>
 	<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
 	<script type="text/javascript" src="js/arrayOperate.js"></script>  
@@ -14,6 +15,7 @@
     		具体场站: <select id="station" name = "station"></select><br/>
     		<input type="button" value="search" onclick="search()" />
     	</form>
+		<a th:href="@{/logout}">Logout</a>
 		<script type="text/javascript">
 		var cities = new Array();
 		var json;
@@ -39,6 +41,7 @@
                     	if(cities[data[i].province].indexOf(data[i].city) == -1)
                     		cities[data[i].province].push(data[i].city);
                     }
+                    loadCity();
                 }
         });
         //添加具体厂站
@@ -61,7 +64,7 @@
             }   
         }
        	//添加区   
-        function loadCity(){
+        function loadDistrict(){
 			var city=$("#city");
 			var pro=$("#province");
 			var index=pro.val();
@@ -76,15 +79,15 @@
 			})
 		}
 		//添加市
-		window.onload=function(){
+		function loadCity(){
 			var pro=$("#province");
 			for(var p in cities){
 				var op=new Option(p,p);
 				pro.append(op);
 			}
-			loadCity();
+			loadDistrict();
 			pro.bind("change",function(){
-				loadCity();
+				loadDistrict();
 			})
 		}
 		

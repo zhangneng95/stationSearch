@@ -1,6 +1,7 @@
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@ page contentType="text/html;charset=UTF-8" language="java"%>
-<html>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
 <head>
 	<title>增加</title>
 	<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
@@ -13,6 +14,7 @@
 		teamviewID: <input type="text" name="id" /><br /> 
 		teamview密码: <input type="password" name="password" /> <input type="button" value="add" onclick="add()"/>
 	</form>
+    <a th:href="@{logout}">Logout</a>
 	<script type="text/javascript">
     	var cities = new Array();
 		cities['台湾']=new Array('台北','台南','其他');
