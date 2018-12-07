@@ -1,5 +1,7 @@
 package indi.nengz.config;
 
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.ApplicationContextAware;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
@@ -7,7 +9,6 @@ import org.springframework.web.servlet.ViewResolver;
 import org.springframework.web.servlet.config.annotation.DefaultServletHandlerConfigurer;
 import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter;
-import org.springframework.web.servlet.view.InternalResourceViewResolver;
 import org.thymeleaf.TemplateEngine;
 import org.thymeleaf.spring4.SpringTemplateEngine;
 import org.thymeleaf.spring4.templateresolver.SpringResourceTemplateResolver;
@@ -18,7 +19,7 @@ import org.thymeleaf.templateresolver.ITemplateResolver;
 @Configuration
 @EnableWebMvc        //启动Spring MVC
 @ComponentScan("indi.nengz.web")       //启动组件扫描
-public class WebConfig extends WebMvcConfigurerAdapter{
+public class WebConfig extends WebMvcConfigurerAdapter implements ApplicationContextAware {
 //	@Bean
 //	public ViewResolver viewResolver() {
 //		InternalResourceViewResolver resolver = new InternalResourceViewResolver();     //配置JSP视图解析器
@@ -28,6 +29,13 @@ public class WebConfig extends WebMvcConfigurerAdapter{
 //		return resolver;
 //	}
 
+
+
+    private ApplicationContext applicationContext;
+
+    public void setApplicationContext(ApplicationContext applicationContext) {
+        this.applicationContext = applicationContext;
+    }
 
     @Bean
     public ViewResolver viewResolver() {
@@ -47,9 +55,11 @@ public class WebConfig extends WebMvcConfigurerAdapter{
 
     private ITemplateResolver templateResolver() {
         SpringResourceTemplateResolver resolver = new SpringResourceTemplateResolver();
-//        resolver.setApplicationContext(applicationContext);
-        resolver.setPrefix("/WEB-INF/templates/");
+        resolver.setApplicationContext(applicationContext);
+        resolver.setPrefix("/WEB-INF/views/");
+        resolver.setSuffix(".html");
         resolver.setTemplateMode("HTML5");
+        resolver.setCharacterEncoding("UTF-8");
         return resolver;
     }
 
