@@ -346,7 +346,7 @@
     <property name="Repository.Attach.Sources" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544777777211" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544777777734" />
     <property name="database.console.LAST_STATE" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/web/WEB-INF/lib" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -555,7 +555,7 @@
       <workItem from="1544515281581" duration="2615000" />
       <workItem from="1544595513604" duration="8602000" />
       <workItem from="1544668874116" duration="14814000" />
-      <workItem from="1544751841829" duration="9301000" />
+      <workItem from="1544751841829" duration="9605000" />
     </task>
     <servers />
   </component>
@@ -586,7 +586,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="81783000" />
+    <option name="totallyTimeSpent" value="82087000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
