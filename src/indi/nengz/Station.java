@@ -5,10 +5,10 @@ import java.util.Date;
 import org.springframework.stereotype.Component;
 
 @Component
-public class TeamView {
+public class Station {
 	private String province;
 	private String city;
-	private String station;
+	private String stationName;
 	private String id;
 	private String password;
 	
@@ -24,11 +24,11 @@ public class TeamView {
 	public void setCity(String city) {
 		this.city = city;
 	}
-	public String getStation() {
-		return station;
+	public String getStationName() {
+		return stationName;
 	}
-	public void setStation(String station) {
-		this.station = station;
+	public void setStationName(String stationName) {
+		this.stationName = stationName;
 	}
 	public String getId() {
 		return id;

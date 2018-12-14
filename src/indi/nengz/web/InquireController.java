@@ -2,10 +2,9 @@ package indi.nengz.web;
 
 
 
-import indi.nengz.Region;
-import indi.nengz.TeamView;
+import indi.nengz.Station;
 import indi.nengz.data.ReadWrite;
-import indi.nengz.data.TeamViewOperate;
+import indi.nengz.data.StationOperate;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -17,7 +16,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 @Controller
 @RequestMapping("/")
 public class InquireController {
-	private TeamViewOperate teamViewOperate = new TeamViewOperate();
+	private StationOperate stationOperate = new StationOperate();
 	private ReadWrite readWrite = new ReadWrite();
 	
     @RequestMapping(value = "/add", method = RequestMethod.GET)
@@ -27,8 +26,8 @@ public class InquireController {
 	
 	@RequestMapping(value = "/add", method = RequestMethod.POST)
 	@ResponseBody
-	public String addRegion(TeamView teamView, Model model) {
-		String flag = teamViewOperate.save(teamView);
+	public String addRegion(Station station, Model model) {
+		String flag = stationOperate.save(station);
 		if(flag == "t") return "1";
 		else if(flag == "e") return "2";
 		return "0";
@@ -42,7 +41,7 @@ public class InquireController {
     @RequestMapping(value = "/getRegion", produces="text/html;charset=UTF-8",method = RequestMethod.POST)
     @ResponseBody 
     public String sendRegion() {
-        String json = teamViewOperate.find();
+        String json = stationOperate.find();
 		return json;
     }
 

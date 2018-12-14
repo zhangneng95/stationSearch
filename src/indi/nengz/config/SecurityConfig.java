@@ -1,22 +1,37 @@
 package indi.nengz.config;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.security.config.annotation.method.configuration.EnableGlobalMethodSecurity;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
+import org.springframework.stereotype.Component;
+
+import javax.sql.DataSource;
+
 
 
 @Configuration
 @EnableWebSecurity
+@ComponentScan
 public class SecurityConfig extends WebSecurityConfigurerAdapter {
+
+    @Autowired
+    DataSource basicDataSource;
 
     @Override
     protected void configure(AuthenticationManagerBuilder auth) throws Exception {
 //        super.configure(auth);
-        auth.inMemoryAuthentication()
-                .withUser("user").password("password").roles("USER").and()
-                .withUser("admin").password("password").roles("USER","ADMIN");
+//        auth.inMemoryAuthentication()
+//                .withUser("user").password("password").roles("USER").and()
+//                .withUser("admin").password("password").roles("ADMIN");
+        auth.jdbcAuthentication().dataSource(basicDataSource)
+                .usersByUsernameQuery("select username,password,true from user where username=?")
+                .authoritiesByUsernameQuery("select username,ROLE_USER from user where username=?");
     }
 
     @Override
