@@ -18,29 +18,33 @@ import java.io.IOException;
 
 
 @Configuration
-//@PropertySource({"classpath:jdbc.properties"})
+@PropertySource({"classpath:indi/nengz/jdbc.properties"})
 public class DataSourceConfig {
 
-//    @Autowired
-//    Environment env;//还可以使用Environment获取properties信息
-//    //绑定资源属性
-//    @Value("${db.driver}")
-//    String driver;
-//    @Value("${db.url}")
-//    String url;
-//    @Value("${db.username}")
-//    String username;
-//    @Value("${db.password}")
-//    String password;
+    @Autowired
+    Environment env;//还可以使用Environment获取properties信息
+    //绑定资源属性
+    @Value("${db.driver}")
+    String driver;
+    @Value("${db.url}")
+    String url;
+    @Value("${db.username}")
+    String username;
+    @Value("${db.password}")
+    String password;
 
 
     @Bean
     public DataSource basicDataSource() {
         BasicDataSource basicDataSource = new BasicDataSource();
-        basicDataSource.setDriverClassName("com.mysql.cj.jdbc.Driver");
-        basicDataSource.setUrl("jdbc:mysql://localhost:3306/search_station?serverTimezone=UTC  ");
-        basicDataSource.setUsername("root");
-        basicDataSource.setPassword("1234");
+//        basicDataSource.setDriverClassName("com.mysql.cj.jdbc.Driver");
+//        basicDataSource.setUrl("jdbc:mysql://localhost:3306/search_station?serverTimezone=UTC  ");
+//        basicDataSource.setUsername("root");
+//        basicDataSource.setPassword("1234");
+        basicDataSource.setDriverClassName(driver);
+        basicDataSource.setUrl(url);
+        basicDataSource.setUsername(username);
+        basicDataSource.setPassword(password);
         basicDataSource.setInitialSize(20);
         basicDataSource.setMaxWaitMillis(30);
         return basicDataSource;
