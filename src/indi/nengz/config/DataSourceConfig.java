@@ -8,9 +8,9 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.PropertySource;
+import org.springframework.context.support.PropertySourcesPlaceholderConfigurer;
 import org.springframework.core.env.Environment;
 import org.springframework.jdbc.datasource.DataSourceTransactionManager;
-import org.springframework.stereotype.Component;
 
 
 import javax.sql.DataSource;
@@ -18,19 +18,19 @@ import java.io.IOException;
 
 
 @Configuration
-@PropertySource({"classpath:indi/nengz/jdbc.properties"})
+@PropertySource({"classpath:indi/nengz/db.properties"})
 public class DataSourceConfig {
 
-    @Autowired
-    Environment env;//还可以使用Environment获取properties信息
+//    @Autowired
+//    Environment env;//还可以使用Environment获取properties信息
     //绑定资源属性
-    @Value("${db.driver}")
+    @Value("${jdbc.driver}")
     String driver;
-    @Value("${db.url}")
+    @Value("${jdbc.url}")
     String url;
-    @Value("${db.username}")
+    @Value("${jdbc.username}")
     String username;
-    @Value("${db.password}")
+    @Value("${jdbc.password}")
     String password;
 
 
@@ -67,5 +67,11 @@ public class DataSourceConfig {
 //            new PathMatchingResourcePatternResolver()
 //              .getResources("classpath:mapper/*.xml"));
         return sqlSessionFactoryBean;
+    }
+
+    //添加解析类才能让@PropertySource正确解析出${}中的值
+    @Bean
+    public static PropertySourcesPlaceholderConfigurer propertyConfigInDev() {
+        return new PropertySourcesPlaceholderConfigurer();
     }
 }

@@ -30,7 +30,7 @@ public class WebConfig extends WebMvcConfigurerAdapter implements ApplicationCon
 //	}
 
 
-
+    //启动Thymeleaf
     private ApplicationContext applicationContext;
 
     public void setApplicationContext(ApplicationContext applicationContext) {
