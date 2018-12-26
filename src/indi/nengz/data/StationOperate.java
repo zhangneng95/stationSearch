@@ -5,8 +5,8 @@ import net.sf.json.JSONObject;
 
 import org.springframework.beans.factory.annotation.Autowired;
 
-import indi.nengz.Region;
-import indi.nengz.Station;
+import indi.nengz.entity.Region;
+import indi.nengz.entity.Station;
 
 public class StationOperate {
 	

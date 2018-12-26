@@ -1,4 +1,4 @@
-package indi.nengz;
+package indi.nengz.entity;
 
 import java.util.Date;
 
@@ -11,6 +11,14 @@ public class Station {
 	private String stationName;
 	private String id;
 	private String password;
+
+	public Station(String province,String city,String stationName,String id,String password) {
+	    this.province = province;
+	    this.city = city;
+	    this.stationName = stationName;
+	    this.id = id;
+	    this.password = password;
+    }
 	
 	public String getProvince() {
 		return province;

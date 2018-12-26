@@ -1,4 +1,4 @@
-package indi.nengz;
+package indi.nengz.entity;
 
 import org.springframework.stereotype.Component;
 
@@ -6,7 +6,7 @@ import org.springframework.stereotype.Component;
 public class Region {
 	private String province;
 	private String city;
-	private String station;
+	private String stationName;
 	public String getProvince() {
 		return province;
 	}
@@ -20,10 +20,10 @@ public class Region {
 		this.city = city;
 	}
 	public String getStation() {
-		return station;
+		return stationName;
 	}
 	public void setStation(String station) {
-		this.station = station;
+		this.stationName = station;
 	}
 	
 }

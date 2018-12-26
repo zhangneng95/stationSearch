@@ -2,10 +2,10 @@ package indi.nengz.web;
 
 
 
-import indi.nengz.Station;
 import indi.nengz.data.ReadWrite;
 import indi.nengz.data.StationOperate;
 
+import indi.nengz.entity.Station;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
