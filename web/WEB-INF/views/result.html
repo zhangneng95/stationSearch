@@ -9,11 +9,11 @@
 	<title>查找</title>
 </head>
 <body>
-<h1>请输入teamview的区域</h1>
+<h1>请输入站点的区域</h1>
 <form method="POST">
 	省: <select id="province" name = "province"></select>
 	市: <select id="city" name = "city"></select>
-	具体场站: <select id="station" name = "station"></select><br/>
+	具体场站: <select id="stationName" name = "stationName"></select><br/>
 	<input type="button" value="search" onclick="search()" />
 </form>
 <a th:href="@{/logout}">Logout</a>
@@ -49,14 +49,14 @@
     function loadStations() {
         var city=$("#city");
         var pro=$("#province");
-        var station=$("#station");
+        var station=$("#stationName");
         var proValue=pro.val();
         var cityValue=city.val();
         var stations = new Array();
         station.find("option").remove();
         for(var i = 0; i < json.length; i++) {
             if(json[i].province == proValue && json[i].city == cityValue) {
-                stations.push(json[i].station);
+                stations.push(json[i].stationName);
             }
         }
         for(var i = 0; i<stations.length; i++) {
@@ -95,10 +95,10 @@
     function search() {
         var pro = $("#province").val();
         var city = $("#city").val();
-        var station = $("#station").val();
+        var station = $("#stationName").val();
         for(var i = 0; i < json.length; i++) {
-            if(json[i].province == pro && json[i].city == city && json[i].station == station)
-                alert("账号是："+json[i].teamView+"\n密码是："+json[i].password);
+            if(json[i].province == pro && json[i].city == city && json[i].stationName == station)
+                alert("账号是："+json[i].id+"\n密码是："+json[i].password);
         }
     }
 </script>

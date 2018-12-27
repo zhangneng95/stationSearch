@@ -3,6 +3,7 @@ package indi.nengz.config;
 
 import org.apache.commons.dbcp2.BasicDataSource;
 import org.mybatis.spring.SqlSessionFactoryBean;
+import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
@@ -19,6 +20,7 @@ import java.io.IOException;
 
 @Configuration
 @PropertySource({"classpath:indi/nengz/db.properties"})
+@MapperScan(value = "indi.nengz.mapper")
 public class DataSourceConfig {
 
 //    @Autowired
@@ -50,13 +52,13 @@ public class DataSourceConfig {
         return basicDataSource;
     }
 
-//        @Bean
-//        public DataSourceTransactionManager transactionManager() throws IOException{
-//            //这里的数据源要和配置SqlSessionFactoryBean中配置的数据源相同，事务才会生效
-//            DataSourceTransactionManager transactionManager =
-//                    new DataSourceTransactionManager(basicDataSource());
-//            return transactionManager;
-//    }
+        @Bean
+        public DataSourceTransactionManager transactionManager() throws IOException{
+            //这里的数据源要和配置SqlSessionFactoryBean中配置的数据源相同，事务才会生效
+            DataSourceTransactionManager transactionManager =
+                    new DataSourceTransactionManager(basicDataSource());
+            return transactionManager;
+    }
 
     @Bean
     public SqlSessionFactoryBean sqlSessionFactory() throws IOException {

@@ -4,21 +4,13 @@ import java.util.Date;
 
 import org.springframework.stereotype.Component;
 
-@Component
+
 public class Station {
 	private String province;
 	private String city;
 	private String stationName;
 	private String id;
 	private String password;
-
-	public Station(String province,String city,String stationName,String id,String password) {
-	    this.province = province;
-	    this.city = city;
-	    this.stationName = stationName;
-	    this.id = id;
-	    this.password = password;
-    }
 	
 	public String getProvince() {
 		return province;
