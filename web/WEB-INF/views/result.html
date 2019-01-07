@@ -15,6 +15,7 @@
 	市: <select id="city" name = "city"></select>
 	具体场站: <select id="stationName" name = "stationName"></select><br/>
 	<input type="button" value="search" onclick="search()" />
+    <input type="button" value="delete" onclick="deleteStation()">
 </form>
 <a th:href="@{/logout}">Logout</a>
 <script type="text/javascript">
@@ -26,6 +27,7 @@
         async:false,//设置成true，这标志着在请求开始后，其他代码依然能够执行。如果把这个选项设置成false，这意味着所有的请求都不再是异步的了，这也会导致浏览器被锁死
         dataType:"json",
         error:function(request){//请求失败之后的操作
+            alert("获取场站信息失败");
             return;
         },
         success:function(data){//请求成功之后的操作
@@ -97,8 +99,39 @@
         var city = $("#city").val();
         var station = $("#stationName").val();
         for(var i = 0; i < json.length; i++) {
-            if(json[i].province == pro && json[i].city == city && json[i].stationName == station)
-                alert("账号是："+json[i].id+"\n密码是："+json[i].password);
+            if(json[i].province == pro && json[i].city == city && json[i].stationName == station) {
+                alert("账号是：" + json[i].id + "\n密码是：" + json[i].password);
+                break;
+            }
+
+        }
+    }
+    function deleteStation() {
+        var pro = $("#province").val();
+        var city = $("#city").val();
+        var station = $("#stationName").val();
+        for(var i = 0; i < json.length; i++) {
+            if (json[i].province == pro && json[i].city == city && json[i].stationName == station) {
+                var id = json[i].id;
+                console.log(id);
+                $.ajax({
+                    type: "POST",//方法类型
+                    dataType: "text",//预期服务器返回的数据类型
+                    url: "deleteStation" ,//url
+                    data: {"id":id},
+                    success: function (data) {
+                        // if(result == "1") alert("保存成功");
+                        // else if(result == "2") alert("重复场站");
+                        // else alert("保存失败，出现bug");
+                        alert("删除成功");
+                        location.reload();
+                    },
+                    error : function() {
+                        alert("删除失败");
+                    }
+                });
+                break;
+            }
         }
     }
 </script>

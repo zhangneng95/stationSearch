@@ -7,5 +7,5 @@ import java.util.List;
 public interface StationService {
     int add(Station station);
     List<Station> findAllStation();
-    int delectStation(String id);
+    int deleteStation(String id);
 }

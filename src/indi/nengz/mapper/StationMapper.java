@@ -18,5 +18,5 @@ public interface StationMapper {
     List<Station> findAllStation();
 
     @Delete("DELETE FROM station WHERE id = #{id}")
-    int delectStation(String id);
+    int deleteStation(String id);
 }

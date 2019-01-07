@@ -14,6 +14,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import java.util.ArrayList;
@@ -44,7 +45,7 @@ public class StationController {
 		stationService.add(station);
 	}
 
-	@RequestMapping(value = "/search", method = RequestMethod.GET)
+	@RequestMapping(value = "/result", method = RequestMethod.GET)
 	public String foundId() {
 		return "result";
 	}
@@ -59,5 +60,11 @@ public class StationController {
 		json = new JSONArray().fromObject(list).toString();
 		return json;
     }
+
+	@RequestMapping(value = "/deleteStation",method = RequestMethod.POST)
+	@ResponseBody
+	public void deleteStation(String id) {
+		stationService.deleteStation(id);
+	}
 
 }

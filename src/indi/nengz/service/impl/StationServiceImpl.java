@@ -25,8 +25,8 @@ public class StationServiceImpl implements StationService {
     }
 
     @Override
-    public int delectStation(String id) {
-        return stationMapper.delectStation(id);
+    public int deleteStation(String id) {
+        return stationMapper.deleteStation(id);
     }
 
 }

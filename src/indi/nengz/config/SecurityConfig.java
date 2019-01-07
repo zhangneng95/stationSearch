@@ -41,7 +41,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 .and()
                 .authorizeRequests()
                 .antMatchers("/add").authenticated()             // add路径需要登陆认证
-                .antMatchers("/search").hasAnyRole("ADMIN")  //只有admin权限才能登陆
+                .antMatchers("/result").hasAnyRole("ADMIN")  //只有admin权限才能登陆
                 .anyRequest().permitAll()//其他的全部允许访问
                 .and()
                 .csrf().disable(); //禁用CSRF防御
