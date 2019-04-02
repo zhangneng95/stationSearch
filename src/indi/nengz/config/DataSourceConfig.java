@@ -52,12 +52,11 @@ public class DataSourceConfig {
         return basicDataSource;
     }
 
-        @Bean
-        public DataSourceTransactionManager transactionManager() throws IOException{
-            //这里的数据源要和配置SqlSessionFactoryBean中配置的数据源相同，事务才会生效
-            DataSourceTransactionManager transactionManager =
-                    new DataSourceTransactionManager(basicDataSource());
-            return transactionManager;
+    @Bean
+    public DataSourceTransactionManager transactionManager() throws IOException{
+        //这里的数据源要和配置SqlSessionFactoryBean中配置的数据源相同，事务才会生效
+        DataSourceTransactionManager transactionManager = new DataSourceTransactionManager(basicDataSource());
+        return transactionManager;
     }
 
     @Bean
